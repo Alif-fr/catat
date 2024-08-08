@@ -1,0 +1,15 @@
+{
+  "name": "catat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd fe && npm run dev",
+    "dev:backend": "cd be && nodemon src/server.ts",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8"
+  }
+}
